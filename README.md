@@ -46,3 +46,17 @@ Through tweaking the mu and sigma in the second cell, I figure out UCB works ext
 In the case of a big areana and a large number of robots (5 robots in 10 x 10), the space complexity increases exponetially with the number of robots to take up the entire RAM, which means both methods are not scalable without modification.
 
 In the case of a small areana loading a large number of robots (5 robots in 5 x 5), collision dominates the behavior of robots. A smart idea may be programmatically excluding the states of collision to reduce the state space and the corresponding action space.
+
+# HW4: Value iteration with gym visualization
+
+* First cell - libraries
+* Second cell - imports
+* Third cell - Same as HW3, the helper functions that decides the input -output relations for the Gridworld, the definitions of the states and actions, `γ=1.0`, number of robots and environment size setup.
+  - ### NEW: `disturb` function that randomly (also time-invariant) shifts a robot stepping on the tile to one of the five directions: UP, DOWN, LEFT, RIGHT, and STAY
+* Forth cell - Same as HW3, finding the future reward of a state
+  - ### NEW: disturbance is introduced
+* ### Fifth cell - `GridMultiagentEnv` class that inherits `gym.Env` class, which I used in conjunction with pygame for visualization. For better training performance, I decided not to visualize the training process.
+* ### Sixth cell - extract the best policy using the value function on a random initial configuration of the robots.
+  - ## HIGHLIGHT: It is possible to have suboptimal actions if we blindly find the *first* action corresponding to the maximum value function. Therefore, when extracting the actions, I further discouraged repetitive motions of the robots (such as a deadlock in-and-out motion of two robots around one target) and encouraged the robots if their intended next move is towards the target. Moreover, I shuffled the sequence of the actions related to the maximum value function to avoid more rare dead lock. 
+* Sixth cell: deprecated visualization, for debugging only now.
+* Seventh cell: saving the value functions to local storage for further insoection.
