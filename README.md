@@ -49,7 +49,7 @@ In the case of a small areana loading a large number of robots (5 robots in 5 x 
 
 # HW4: Value iteration with gym visualization
 
-* For interactive notebook, go to https://colab.research.google.com/drive/1PZT9xVR3YC5UJL0eWh2stUKO_czM672M?usp=sharing https://colab.research.google.com/drive/1ynXcglC9ZaPevqGbkcNXWXS9F7Wz2nNp?usp=sharing
+* For interactive notebook, go to https://colab.research.google.com/drive/1ynXcglC9ZaPevqGbkcNXWXS9F7Wz2nNp?usp=sharing
 
 * First cell - libraries
 * Second cell - imports
