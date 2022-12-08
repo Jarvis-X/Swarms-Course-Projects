@@ -31,6 +31,8 @@ Through tweaking the mu and sigma in the second cell, I figure out UCB works ext
 
 # HW3: Policy iteration and Value iteration
 
+* For interactive notebook, go to https://colab.research.google.com/drive/1GY2FlfP-f-kNGjIkGo5mOBnqDHK_Euj7?usp=sharing
+
 * Fisrt block: setup and parameter initializations
 
 * Second block: evaluating the value function of a future state
