@@ -64,3 +64,6 @@ In the case of a small areana loading a large number of robots (5 robots in 5 x 
   - ## HIGHLIGHT: It is possible to have suboptimal actions if we blindly find the *first* action corresponding to the maximum value function. Therefore, when extracting the actions, I further discouraged repetitive motions of the robots (such as a deadlock in-and-out motion of two robots around one target) and encouraged the robots if their intended next move is towards the target. Moreover, I shuffled the sequence of the actions related to the maximum value function to avoid more rare dead lock. 
 * Sixth cell: deprecated visualization, for debugging only now.
 * Seventh cell: saving the value functions to local storage for further inspection. See https://github.com/Jarvis-X/Swarms-Course-Projects/blob/main/Env4x4and4RobotsValueFunction.pickle for the example of the value function of 4 robots on a 4x4 map
+
+# SawStable: Final Project of using RL to drive an aerial vehicle to saw a workpiece
+* See https://www.overleaf.com/read/npmgnbrhdnzf for more information
