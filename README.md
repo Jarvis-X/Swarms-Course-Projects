@@ -68,3 +68,4 @@ In the case of a small areana loading a large number of robots (5 robots in 5 x 
 # SawStable: Final Project of using RL to drive an aerial vehicle to saw a workpiece
 * For interactive notebook, go to https://colab.research.google.com/drive/1PYSu0emGHYKFKAoXyXXFfKGaiueZXQUt?usp=sharing
 * See https://www.overleaf.com/read/npmgnbrhdnzf for more information
+### Check the videos here: https://github.com/Jarvis-X/Swarms-Course-Projects/blob/main/video_PID.mp4 and https://github.com/Jarvis-X/Swarms-Course-Projects/blob/main/video_RL.mp4
